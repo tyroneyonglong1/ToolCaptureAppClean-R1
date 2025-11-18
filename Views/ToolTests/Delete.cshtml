@@ -1,0 +1,54 @@
+﻿@model ToolCaptureAppClean.Models.ToolTest
+
+@{
+    ViewData["Title"] = "Delete Tool Test";
+}   
+
+<h2>Delete Tool Test</h2>
+<hr />
+
+<h5 class="text-danger">⚠️ Are you sure you want to delete this record?</h5>
+<div class="card p-3 mb-3">
+    <dl class="row">
+        <dt class="col-sm-3">Tool ID</dt>
+        <dd class="col-sm-9">@Model.ToolId</dd>
+
+        <dt class="col-sm-3">Test Date</dt>
+        <dd class="col-sm-9">@Model.TestDate.ToShortDateString()</dd>
+
+        <dt class="col-sm-3">Operator</dt>
+        <dd class="col-sm-9">@Model.Operator</dd>
+
+        <dt class="col-sm-3">Customer</dt>
+        <dd class="col-sm-9">@Model.Customer</dd>
+
+        <dt class="col-sm-3">Material</dt>
+        <dd class="col-sm-9">@Model.Material</dd>
+
+        <dt class="col-sm-3">Operation</dt>
+        <dd class="col-sm-9">@Model.Operation</dd>
+
+        <dt class="col-sm-3">Coolant</dt>
+        <dd class="col-sm-9">@Model.Coolant</dd>
+
+        <dt class="col-sm-3">Remarks</dt>
+        <dd class="col-sm-9">@Model.Notes</dd>
+
+        @if (!string.IsNullOrEmpty(Model.PhotoPath))
+        {
+            <dt class="col-sm-3">Photos</dt>
+            <dd class="col-sm-9 d-flex flex-wrap">
+                @foreach (var img in Model.PhotoPath.Split(';'))
+                {
+                    <img src="@img" width="100" class="border rounded me-2 mb-2" />
+                }
+            </dd>
+        }
+    </dl>
+</div>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">🗑️ Delete</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>

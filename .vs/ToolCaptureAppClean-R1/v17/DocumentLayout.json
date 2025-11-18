@@ -1,0 +1,295 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ylchoo.HPMTIND\\source\\repos\\ToolCaptureAppClean -R1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8E710B-566E-44F3-985F-96736EF8E0A3}|ToolCaptureAppClean-R1.csproj|c:\\users\\ylchoo.hpmtind\\source\\repos\\toolcaptureappclean -r1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8E710B-566E-44F3-985F-96736EF8E0A3}|ToolCaptureAppClean-R1.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ylchoo.HPMTIND\\source\\repos\\ToolCaptureAppClean\\ToolCaptureAppClean.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8E710B-566E-44F3-985F-96736EF8E0A3}|ToolCaptureAppClean-R1.csproj|c:\\users\\ylchoo.hpmtind\\source\\repos\\toolcaptureappclean -r1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8E710B-566E-44F3-985F-96736EF8E0A3}|ToolCaptureAppClean-R1.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8E710B-566E-44F3-985F-96736EF8E0A3}|ToolCaptureAppClean-R1.csproj|c:\\users\\ylchoo.hpmtind\\source\\repos\\toolcaptureappclean -r1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EB8E710B-566E-44F3-985F-96736EF8E0A3}|ToolCaptureAppClean-R1.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8E710B-566E-44F3-985F-96736EF8E0A3}|ToolCaptureAppClean-R1.csproj|c:\\users\\ylchoo.hpmtind\\source\\repos\\toolcaptureappclean -r1\\views\\tooltests\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8E710B-566E-44F3-985F-96736EF8E0A3}|ToolCaptureAppClean-R1.csproj|solutionrelative:views\\tooltests\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8E710B-566E-44F3-985F-96736EF8E0A3}|ToolCaptureAppClean-R1.csproj|c:\\users\\ylchoo.hpmtind\\source\\repos\\toolcaptureappclean -r1\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8E710B-566E-44F3-985F-96736EF8E0A3}|ToolCaptureAppClean-R1.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8E710B-566E-44F3-985F-96736EF8E0A3}|ToolCaptureAppClean-R1.csproj|c:\\users\\ylchoo.hpmtind\\source\\repos\\toolcaptureappclean -r1\\views\\tooltests\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8E710B-566E-44F3-985F-96736EF8E0A3}|ToolCaptureAppClean-R1.csproj|solutionrelative:views\\tooltests\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8E710B-566E-44F3-985F-96736EF8E0A3}|ToolCaptureAppClean-R1.csproj|c:\\users\\ylchoo.hpmtind\\source\\repos\\toolcaptureappclean -r1\\controllers\\tooltestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8E710B-566E-44F3-985F-96736EF8E0A3}|ToolCaptureAppClean-R1.csproj|solutionrelative:controllers\\tooltestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8E710B-566E-44F3-985F-96736EF8E0A3}|ToolCaptureAppClean-R1.csproj|c:\\users\\ylchoo.hpmtind\\source\\repos\\toolcaptureappclean -r1\\views\\tooltests\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8E710B-566E-44F3-985F-96736EF8E0A3}|ToolCaptureAppClean-R1.csproj|solutionrelative:views\\tooltests\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8E710B-566E-44F3-985F-96736EF8E0A3}|ToolCaptureAppClean-R1.csproj|c:\\users\\ylchoo.hpmtind\\source\\repos\\toolcaptureappclean -r1\\views\\tooltests\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8E710B-566E-44F3-985F-96736EF8E0A3}|ToolCaptureAppClean-R1.csproj|solutionrelative:views\\tooltests\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8E710B-566E-44F3-985F-96736EF8E0A3}|ToolCaptureAppClean-R1.csproj|c:\\users\\ylchoo.hpmtind\\source\\repos\\toolcaptureappclean -r1\\migrations\\20251107030723_addcustomertotooltest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8E710B-566E-44F3-985F-96736EF8E0A3}|ToolCaptureAppClean-R1.csproj|solutionrelative:migrations\\20251107030723_addcustomertotooltest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8E710B-566E-44F3-985F-96736EF8E0A3}|ToolCaptureAppClean-R1.csproj|c:\\users\\ylchoo.hpmtind\\source\\repos\\toolcaptureappclean -r1\\views\\tooltests\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB8E710B-566E-44F3-985F-96736EF8E0A3}|ToolCaptureAppClean-R1.csproj|solutionrelative:views\\tooltests\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8E710B-566E-44F3-985F-96736EF8E0A3}|ToolCaptureAppClean-R1.csproj|c:\\users\\ylchoo.hpmtind\\source\\repos\\toolcaptureappclean -r1\\models\\tooltest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8E710B-566E-44F3-985F-96736EF8E0A3}|ToolCaptureAppClean-R1.csproj|solutionrelative:models\\tooltest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8E710B-566E-44F3-985F-96736EF8E0A3}|ToolCaptureAppClean-R1.csproj|c:\\users\\ylchoo.hpmtind\\source\\repos\\toolcaptureappclean -r1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EB8E710B-566E-44F3-985F-96736EF8E0A3}|ToolCaptureAppClean-R1.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8E710B-566E-44F3-985F-96736EF8E0A3}|ToolCaptureAppClean-R1.csproj|c:\\users\\ylchoo.hpmtind\\source\\repos\\toolcaptureappclean -r1\\migrations\\20251107014047_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8E710B-566E-44F3-985F-96736EF8E0A3}|ToolCaptureAppClean-R1.csproj|solutionrelative:migrations\\20251107014047_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8E710B-566E-44F3-985F-96736EF8E0A3}|ToolCaptureAppClean-R1.csproj|c:\\users\\ylchoo.hpmtind\\source\\repos\\toolcaptureappclean -r1\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8E710B-566E-44F3-985F-96736EF8E0A3}|ToolCaptureAppClean-R1.csproj|solutionrelative:models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB8E710B-566E-44F3-985F-96736EF8E0A3}|ToolCaptureAppClean-R1.csproj|c:\\users\\ylchoo.hpmtind\\source\\repos\\toolcaptureappclean -r1\\models\\brandresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB8E710B-566E-44F3-985F-96736EF8E0A3}|ToolCaptureAppClean-R1.csproj|solutionrelative:models\\brandresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1873294388:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ylchoo.HPMTIND\\source\\repos\\ToolCaptureAppClean -R1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\ylchoo.HPMTIND\\source\\repos\\ToolCaptureAppClean -R1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-07T05:08:59.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\ylchoo.HPMTIND\\source\\repos\\ToolCaptureAppClean -R1\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\ylchoo.HPMTIND\\source\\repos\\ToolCaptureAppClean -R1\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T05:06:57.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ylchoo.HPMTIND\\source\\repos\\ToolCaptureAppClean -R1\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\ylchoo.HPMTIND\\source\\repos\\ToolCaptureAppClean -R1\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-07T03:03:48.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\ylchoo.HPMTIND\\source\\repos\\ToolCaptureAppClean -R1\\Views\\ToolTests\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\ToolTests\\Details.cshtml",
+              "ToolTip": "C:\\Users\\ylchoo.HPMTIND\\source\\repos\\ToolCaptureAppClean -R1\\Views\\ToolTests\\Details.cshtml",
+              "RelativeToolTip": "Views\\ToolTests\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-07T02:03:12.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\ylchoo.HPMTIND\\source\\repos\\ToolCaptureAppClean -R1\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\ylchoo.HPMTIND\\source\\repos\\ToolCaptureAppClean -R1\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-07T05:07:17.243Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ylchoo.HPMTIND\\source\\repos\\ToolCaptureAppClean -R1\\Views\\ToolTests\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\ToolTests\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ylchoo.HPMTIND\\source\\repos\\ToolCaptureAppClean -R1\\Views\\ToolTests\\Index.cshtml",
+              "RelativeToolTip": "Views\\ToolTests\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-07T02:02:42.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ToolTestsController.cs",
+              "DocumentMoniker": "C:\\Users\\ylchoo.HPMTIND\\source\\repos\\ToolCaptureAppClean -R1\\Controllers\\ToolTestsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ToolTestsController.cs",
+              "ToolTip": "C:\\Users\\ylchoo.HPMTIND\\source\\repos\\ToolCaptureAppClean -R1\\Controllers\\ToolTestsController.cs",
+              "RelativeToolTip": "Controllers\\ToolTestsController.cs",
+              "ViewState": "AgIAALUAAAAAAAAAAAAwwNMAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T01:40:05.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\ylchoo.HPMTIND\\source\\repos\\ToolCaptureAppClean -R1\\Views\\ToolTests\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\ToolTests\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\ylchoo.HPMTIND\\source\\repos\\ToolCaptureAppClean -R1\\Views\\ToolTests\\Edit.cshtml",
+              "RelativeToolTip": "Views\\ToolTests\\Edit.cshtml",
+              "ViewState": "AgIAAGkAAAAAAAAAAIBJwGwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-07T03:24:12.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\ylchoo.HPMTIND\\source\\repos\\ToolCaptureAppClean -R1\\Views\\ToolTests\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\ToolTests\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\ylchoo.HPMTIND\\source\\repos\\ToolCaptureAppClean -R1\\Views\\ToolTests\\Delete.cshtml",
+              "RelativeToolTip": "Views\\ToolTests\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-07T03:23:53.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20251107030723_AddCustomerToToolTest.cs",
+              "DocumentMoniker": "C:\\Users\\ylchoo.HPMTIND\\source\\repos\\ToolCaptureAppClean -R1\\Migrations\\20251107030723_AddCustomerToToolTest.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251107030723_AddCustomerToToolTest.cs",
+              "ToolTip": "C:\\Users\\ylchoo.HPMTIND\\source\\repos\\ToolCaptureAppClean -R1\\Migrations\\20251107030723_AddCustomerToToolTest.cs",
+              "RelativeToolTip": "Migrations\\20251107030723_AddCustomerToToolTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T03:07:23.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\ylchoo.HPMTIND\\source\\repos\\ToolCaptureAppClean -R1\\Views\\ToolTests\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\ToolTests\\Create.cshtml",
+              "ToolTip": "C:\\Users\\ylchoo.HPMTIND\\source\\repos\\ToolCaptureAppClean -R1\\Views\\ToolTests\\Create.cshtml",
+              "RelativeToolTip": "Views\\ToolTests\\Create.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-07T02:02:57.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ToolTest.cs",
+              "DocumentMoniker": "C:\\Users\\ylchoo.HPMTIND\\source\\repos\\ToolCaptureAppClean -R1\\Models\\ToolTest.cs",
+              "RelativeDocumentMoniker": "Models\\ToolTest.cs",
+              "ToolTip": "C:\\Users\\ylchoo.HPMTIND\\source\\repos\\ToolCaptureAppClean -R1\\Models\\ToolTest.cs",
+              "RelativeToolTip": "Models\\ToolTest.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAA2wBkAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T01:36:54.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\ylchoo.HPMTIND\\source\\repos\\ToolCaptureAppClean -R1\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\ylchoo.HPMTIND\\source\\repos\\ToolCaptureAppClean -R1\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAiwA8AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-07T02:20:32.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ToolCaptureAppClean.csproj",
+              "DocumentMoniker": "C:\\Users\\ylchoo.HPMTIND\\source\\repos\\ToolCaptureAppClean\\ToolCaptureAppClean.csproj",
+              "RelativeDocumentMoniker": "..\\ToolCaptureAppClean\\ToolCaptureAppClean.csproj",
+              "ToolTip": "C:\\Users\\ylchoo.HPMTIND\\source\\repos\\ToolCaptureAppClean\\ToolCaptureAppClean.csproj",
+              "RelativeToolTip": "..\\ToolCaptureAppClean\\ToolCaptureAppClean.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-07T02:20:19.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "20251107014047_Init.cs",
+              "DocumentMoniker": "C:\\Users\\ylchoo.HPMTIND\\source\\repos\\ToolCaptureAppClean -R1\\Migrations\\20251107014047_Init.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251107014047_Init.cs",
+              "ToolTip": "C:\\Users\\ylchoo.HPMTIND\\source\\repos\\ToolCaptureAppClean -R1\\Migrations\\20251107014047_Init.cs",
+              "RelativeToolTip": "Migrations\\20251107014047_Init.cs",
+              "ViewState": "AgIAAEgAAAD7//////9QwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T01:40:47.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ylchoo.HPMTIND\\source\\repos\\ToolCaptureAppClean -R1\\Models\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Models\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\ylchoo.HPMTIND\\source\\repos\\ToolCaptureAppClean -R1\\Models\\AppDbContext.cs",
+              "RelativeToolTip": "Models\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T01:37:33.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "BrandResult.cs",
+              "DocumentMoniker": "C:\\Users\\ylchoo.HPMTIND\\source\\repos\\ToolCaptureAppClean -R1\\Models\\BrandResult.cs",
+              "RelativeDocumentMoniker": "Models\\BrandResult.cs",
+              "ToolTip": "C:\\Users\\ylchoo.HPMTIND\\source\\repos\\ToolCaptureAppClean -R1\\Models\\BrandResult.cs",
+              "RelativeToolTip": "Models\\BrandResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T01:37:08.752Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

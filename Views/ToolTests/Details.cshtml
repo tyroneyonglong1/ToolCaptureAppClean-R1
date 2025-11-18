@@ -1,0 +1,64 @@
+﻿@model ToolCaptureAppClean.Models.ToolTest
+@{
+    ViewData["Title"] = "Details";
+}
+<h4>Test Details</h4>
+<hr />
+<div class="mb-2"><strong>Tool ID:</strong> @Model.ToolId</div>
+<div class="mb-2"><strong>Test Date:</strong> @Model.TestDate.ToString("yyyy-MM-dd")</div>
+<div class="mb-2"><strong>Operator:</strong> @Model.Operator</div>
+<div class="mb-2"><strong>Customer:</strong> @Model.Customer</div>
+<div class="mb-2"><strong>Material:</strong> @Model.Material</div>
+<div class="mb-2"><strong>Operation:</strong> @Model.Operation</div>
+<div class="mb-2"><strong>Coolant:</strong> @Model.Coolant</div>
+<div class="mb-2"><strong>Notes:</strong> @Model.Notes</div>
+
+@if (!string.IsNullOrWhiteSpace(Model.PhotoPath))
+{
+    var imgs = Model.PhotoPath.Split(';', StringSplitOptions.RemoveEmptyEntries);
+    <div class="mt-3 d-flex flex-wrap gap-2">
+        @foreach (var p in imgs)
+        {
+            <img src="@p" style="width:110px;height:90px;object-fit:cover;border-radius:10px;border:1px solid #eee;" />
+        }
+    </div>
+}
+
+@if (Model.BrandResults?.Any() == true)
+{
+    <hr />
+    <h5>Brand Results</h5>
+    <div class="table-responsive">
+        <table class="table table-sm">
+            <thead>
+                <tr>
+                    <th>Brand</th>
+                    <th>Vc</th>
+                    <th>Ae</th>
+                    <th>Ap</th>
+                    <th>Fz</th>
+                    <th>Flutes</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var b in Model.BrandResults)
+                {
+                    <tr>
+                        <td>@b.BrandName</td>
+                        <td>@b.Vc</td>
+                        <td>@b.Ae</td>
+                        <td>@b.Ap</td>
+                        <td>@b.Fz</td>
+                        <td>@b.Flutes</td>
+                        <td>@b.ResultNotes</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+
+<div class="mt-3">
+    <a asp-action="Index" class="btn btn-outline-secondary">Back</a>
+</div>

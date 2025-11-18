@@ -1,0 +1,147 @@
+﻿@model ToolCaptureAppClean.Models.ToolTest
+
+@{
+    ViewData["Title"] = "Edit Tool Test";
+}
+
+<h2>Edit Tool Test</h2>
+<hr />
+
+<div class="row">
+    <div class="col-md-10">
+        <form asp-action="Edit" method="post" enctype="multipart/form-data">
+            <input type="hidden" asp-for="Id" />
+
+            <!-- 🧱 Basic Info -->
+            <div class="card p-3 mb-3">
+                <h5>Test Information</h5>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <label asp-for="ToolId" class="form-label">Tool ID</label>
+                        <input asp-for="ToolId" class="form-control" readonly />
+                    </div>
+                    <div class="col-md-4">
+                        <label asp-for="TestDate" class="form-label">Test Date</label>
+                        <input asp-for="TestDate" class="form-control" type="date" />
+                    </div>
+                    <div class="col-md-4">
+                        <label asp-for="Operator" class="form-label">Operator</label>
+                        <input asp-for="Operator" class="form-control" />
+                    </div>
+                </div>
+
+                <div class="row g-3 mt-2">
+                    <div class="col-md-4">
+                        <label asp-for="Customer" class="form-label">Customer</label>
+                        <input asp-for="Customer" class="form-control" placeholder="Customer Name" />
+                    </div>
+                    <div class="col-md-4">
+                        <label asp-for="Material" class="form-label">Material</label>
+                        <input asp-for="Material" class="form-control" />
+                    </div>
+                    <div class="col-md-4">
+                        <label asp-for="Operation" class="form-label">Operation</label>
+                        <select asp-for="Operation" class="form-select">
+                            <option value="">-- Select Operation --</option>
+                            <option>Milling</option>
+                            <option>Drilling</option>
+                            <option>Turning</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row g-3 mt-2">
+                    <div class="col-md-4">
+                        <label asp-for="Coolant" class="form-label">Coolant</label>
+                        <input asp-for="Coolant" class="form-control" />
+                    </div>
+                    <div class="col-md-8">
+                        <label asp-for="Notes" class="form-label">Remarks</label>
+                        <textarea asp-for="Notes" class="form-control" rows="2"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 🟦 Photo Section -->
+            <div class="card p-3 mb-3">
+                <h5>Photos</h5>
+
+                <!-- File Upload -->
+                <div class="form-group mb-3">
+                    <label class="form-label">Upload new photos</label>
+                    <input class="form-control" type="file" name="photos" accept="image/*" multiple />
+                    <small class="text-muted">Leave empty to keep existing photos</small>
+                </div>
+
+                <!-- Show existing photos -->
+                @if (!string.IsNullOrEmpty(Model.PhotoPath))
+                {
+                    <div class="mt-2 d-flex flex-wrap gap-2">
+                        @foreach (var img in Model.PhotoPath.Split(';'))
+                        {
+                            <img src="@img" width="100" class="border rounded me-2 mb-2" />
+                        }
+                    </div>
+                }
+
+                <!-- Webcam Section (desktop/laptop only) -->
+                <div id="webcamSection" style="display:none;">
+                    <hr />
+                    <h6>Or Capture via Webcam</h6>
+                    <video id="video" width="320" height="240" autoplay></video>
+                    <canvas id="canvas" width="320" height="240" style="display:none;"></canvas>
+                    <div class="mt-2">
+                        <button type="button" class="btn btn-secondary" id="captureButton">📸 Capture</button>
+                    </div>
+                    <div id="photoPreview" class="mt-2 d-flex flex-wrap gap-2"></div>
+                    <input type="hidden" id="capturedImages" name="capturedImages" />
+                </div>
+            </div>
+
+            <!-- 🟩 Buttons -->
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">💾 Save Changes</button>
+                <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // ✅ Webcam logic (only enable on desktop/laptop)
+        const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+        const webcamSection = document.getElementById("webcamSection");
+
+        if (!isMobile) {
+            webcamSection.style.display = "block";
+
+            const video = document.getElementById('video');
+            const canvas = document.getElementById('canvas');
+            const captureButton = document.getElementById('captureButton');
+            const hiddenInput = document.getElementById('capturedImages');
+            const preview = document.getElementById('photoPreview');
+
+            let capturedList = [];
+
+            navigator.mediaDevices.getUserMedia({ video: true })
+                .then(stream => { video.srcObject = stream; })
+                .catch(err => { console.error("Camera access denied:", err); });
+
+            captureButton.addEventListener('click', () => {
+                const context = canvas.getContext('2d');
+                context.drawImage(video, 0, 0, canvas.width, canvas.height);
+                const imageData = canvas.toDataURL('image/png');
+                capturedList.push(imageData);
+                hiddenInput.value = JSON.stringify(capturedList);
+
+                const img = document.createElement('img');
+                img.src = imageData;
+                img.width = 80;
+                img.height = 60;
+                img.classList.add('me-2', 'mb-2', 'rounded', 'border');
+                preview.appendChild(img);
+            });
+        }
+    </script>
+}

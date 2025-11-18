@@ -1,0 +1,202 @@
+﻿@model ToolCaptureAppClean.Models.ToolTest
+@{
+    ViewData["Title"] = "Create Tool Test";
+}
+
+<h4>Create Tool Test</h4>
+<hr />
+
+<form asp-action="Create" enctype="multipart/form-data" class="needs-validation" novalidate>
+    <div asp-validation-summary="ModelOnly" class="text-danger mb-2"></div>
+
+    <div class="card p-3 mb-3">
+        <div class="row g-3">
+            <div class="col-12">
+                <label asp-for="ToolId" class="form-label">Test Tool ID</label>
+                <select asp-for="ToolId" class="form-select" required>
+                    <option value="">-- Select --</option>
+                    <option>T001</option>
+                    <option>T002</option>
+                    <option>T003</option>
+                    <option>T004</option>
+                    <option>T005</option>
+                </select>
+                <span asp-validation-for="ToolId" class="text-danger"></span>
+            </div>
+
+            <div class="col-6">
+                <label asp-for="TestDate" class="form-label">Test Date</label>
+                <input asp-for="TestDate" type="date" class="form-control" value="@DateTime.Today.ToString("yyyy-MM-dd")" />
+            </div>
+
+            <div class="col-6">
+                <label asp-for="Operator" class="form-label">Operator</label>
+                <input asp-for="Operator" class="form-control" />
+            </div>
+
+
+            <div class="col-6">
+                <label asp-for="Customer" class="form-label">Customer</label>
+                <input asp-for="Customer" class="form-control" />
+            </div>
+
+
+
+            <div class="col-12">
+                <label asp-for="Material" class="form-label">Material</label>
+                <input asp-for="Material" class="form-control" />
+            </div>
+
+            <div class="col-12">
+                <label asp-for="Operation" class="form-label">Operation</label>
+                <select asp-for="Operation" class="form-select" id="operationSelect">
+                    <option value="Milling">Milling</option>
+                    <option value="Drilling">Drilling</option>
+                    <option value="Turning">Turning</option>
+                </select>
+            </div>
+
+            <div class="col-12">
+                <label asp-for="Coolant" class="form-label">Coolant</label>
+                <input asp-for="Coolant" class="form-control" />
+            </div>
+
+            <div class="col-12">
+                <label asp-for="Notes" class="form-label">General Remarks</label>
+                <textarea asp-for="Notes" class="form-control" rows="3"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <div class="card p-3 mb-3">
+        <div class="d-flex justify-content-between align-items-center">
+            <h5 class="mb-0">Brand Comparison</h5>
+            <div class="d-flex align-items-center gap-2">
+                <label class="form-label mb-0">Brands</label>
+                <input type="number" id="brandCount" class="form-control" value="1" min="1" max="5" style="width:80px" />
+            </div>
+        </div>
+        <div id="brandSection" class="mt-3"></div>
+    </div>
+
+    <div class="card p-3 mb-3">
+        <h5>Upload or Capture Photos</h5>
+
+        <div class="mb-3">
+            <label class="form-label">Upload (Multiple)</label>
+            <input class="form-control" type="file" name="photos" accept="image/*" multiple />
+            <small class="text-muted">Mobile: camera or gallery · PC: file chooser</small>
+        </div>
+
+        <div id="webcamSection" style="display:none;">
+            <hr />
+            <h6>Or Capture with Webcam</h6>
+            <video id="video" width="320" height="240" autoplay></video>
+            <canvas id="canvas" width="320" height="240" style="display:none;"></canvas>
+            <div class="mt-2">
+                <button type="button" class="btn btn-secondary" id="captureButton">📸 Capture</button>
+            </div>
+            <div id="photoPreview" class="mt-2 d-flex flex-wrap gap-2"></div>
+            <input type="hidden" id="capturedImages" name="capturedImages" />
+        </div>
+    </div>
+
+    <div class="d-flex gap-2">
+        <button type="submit" class="btn btn-primary">Create</button>
+        <a asp-action="Index" class="btn btn-outline-secondary">Back</a>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        // Dynamic brand block builder based on Operation
+        const brandSection = document.getElementById('brandSection');
+        const brandCount = document.getElementById('brandCount');
+        const opSel = document.getElementById('operationSelect');
+
+        function renderBrandBlocks() {
+            const count = parseInt(brandCount.value || "1");
+            const op = opSel.value; // Milling / Drilling / Turning
+            brandSection.innerHTML = "";
+
+            for (let i = 0; i < count; i++) {
+                let opFields = "";
+                if (op === "Milling") {
+                    opFields = `
+                        <div class="row g-2">
+                            <div class="col-6 col-md-4"><input class="form-control" name="Brands[${i}].Vc" placeholder="Vc (m/min)" type="number" step="0.01" /></div>
+                            <div class="col-6 col-md-4"><input class="form-control" name="Brands[${i}].Ae" placeholder="Ae (mm)" type="number" step="0.01" /></div>
+                            <div class="col-6 col-md-4"><input class="form-control" name="Brands[${i}].Ap" placeholder="Ap (mm)" type="number" step="0.01" /></div>
+                            <div class="col-6 col-md-4"><input class="form-control" name="Brands[${i}].Fz" placeholder="Fz (mm/tooth)" type="number" step="0.001" /></div>
+                            <div class="col-6 col-md-4"><input class="form-control" name="Brands[${i}].Flutes" placeholder="Flutes" type="number" /></div>
+                        </div>`;
+                } else if (op === "Drilling") {
+                    opFields = `
+                        <div class="row g-2">
+                            <div class="col-6 col-md-4"><input class="form-control" name="Brands[${i}].Vc" placeholder="Vc (m/min)" type="number" step="0.01" /></div>
+                            <div class="col-6 col-md-4"><input class="form-control" name="Brands[${i}].Ap" placeholder="Ap (mm)" type="number" step="0.01" /></div>
+                            <div class="col-6 col-md-4"><input class="form-control" name="Brands[${i}].Fz" placeholder="Fz (mm/rev)" type="number" step="0.001" /></div>
+                            <div class="col-6 col-md-4"><input class="form-control" name="Brands[${i}].Flutes" placeholder="Flutes" type="number" /></div>
+                        </div>`;
+                } else { // Turning
+                    opFields = `
+                        <div class="row g-2">
+                            <div class="col-6 col-md-4"><input class="form-control" name="Brands[${i}].Vc" placeholder="Vc (m/min)" type="number" step="0.01" /></div>
+                            <div class="col-6 col-md-4"><input class="form-control" name="Brands[${i}].Ap" placeholder="Ap (mm)" type="number" step="0.01" /></div>
+                            <div class="col-6 col-md-4"><input class="form-control" name="Brands[${i}].Fz" placeholder="Fz (mm/rev)" type="number" step="0.001" /></div>
+                        </div>`;
+                }
+
+                brandSection.insertAdjacentHTML("beforeend", `
+                    <div class="card p-3 mb-2 border">
+                        <div class="mb-2">
+                            <input class="form-control" name="Brands[${i}].BrandName" placeholder="Brand Name" required />
+                        </div>
+                        ${opFields}
+                        <div class="mt-2">
+                            <textarea class="form-control" name="Brands[${i}].ResultNotes" placeholder="Results / Observations"></textarea>
+                        </div>
+                    </div>
+                `);
+            }
+        }
+
+        brandCount.addEventListener('change', renderBrandBlocks);
+        opSel.addEventListener('change', renderBrandBlocks);
+        renderBrandBlocks();
+
+        // Webcam for laptops
+        const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+        const webcamSection = document.getElementById("webcamSection");
+        if (!isMobile) {
+            webcamSection.style.display = "block";
+            const video = document.getElementById('video');
+            const canvas = document.getElementById('canvas');
+            const captureButton = document.getElementById('captureButton');
+            const hiddenInput = document.getElementById('capturedImages');
+            const preview = document.getElementById('photoPreview');
+            let capturedList = [];
+
+            navigator.mediaDevices.getUserMedia({ video: true })
+                .then(stream => { video.srcObject = stream; })
+                .catch(err => { console.error("Camera access denied:", err); });
+
+            captureButton.addEventListener('click', () => {
+                const ctx = canvas.getContext('2d');
+                ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+                const imageData = canvas.toDataURL('image/png');
+                capturedList.push(imageData);
+                hiddenInput.value = JSON.stringify(capturedList);
+
+                const img = document.createElement('img');
+                img.src = imageData;
+                img.style.width = '80px';
+                img.style.height = '60px';
+                img.style.objectFit = 'cover';
+                img.classList.add('me-2','mb-2','rounded','border');
+                preview.appendChild(img);
+            });
+        }
+    </script>
+}
